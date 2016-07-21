@@ -21,6 +21,7 @@ class RestfulSinatraApp < Sinatra::Base
   # GET /books/1 GET BOOKS WITH ID 1
   get '/books/:id' do
     # some code here
+    @book = Book.find(params[:id])
     erb :'each_book'
   end
 
