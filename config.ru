@@ -5,6 +5,7 @@ Bundler.require
 
 # THIS IS THE MODEL
 require './models/book'
+require './models/author'
 
 # THIS IS THE CONTROLLER
 require './app'
