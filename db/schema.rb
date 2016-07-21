@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20160721040136) do
   enable_extension "plpgsql"
 
   create_table "authors", force: :cascade do |t|
-    t.string   "name",        null: false
+    t.string   "name",        limit: 20, null: false
     t.string   "photo_url"
     t.string   "nationality"
     t.datetime "created_at"
