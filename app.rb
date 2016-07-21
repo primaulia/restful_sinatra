@@ -3,6 +3,10 @@ class RestfulSinatraApp < Sinatra::Base
     erb 'Hello world'
   end
 
+  get '/about' do
+    erb '<h2>About Page</h2>'
+  end
+
   # GET /books LIST ALL THE BOOKS
   get '/books' do
     # @books BY RIGHT SHOULD TAKE FROM DATABASE
