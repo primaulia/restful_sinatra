@@ -1,10 +1,10 @@
 class RestfulSinatraApp < Sinatra::Base
-  get '/' do
+  get '/' do #static page
     erb 'Hello world'
   end
 
-  get '/about' do
-    erb '<h2>About Page</h2>'
+  get '/about' do #static page
+    erb :'about'
   end
 
   # GET /books LIST ALL THE BOOKS
@@ -15,14 +15,14 @@ class RestfulSinatraApp < Sinatra::Base
 
     @books = Book.all
 
-    erb :'books'
+    erb :'books/index'
   end
 
   # GET /books/1 GET BOOKS WITH ID 1
   get '/books/:id' do
     # some code here
     @book = Book.find(params[:id])
-    erb :'each_book'
+    erb :'books/show'
   end
 
 

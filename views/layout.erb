@@ -4,11 +4,18 @@
     <meta charset="utf-8">
     <title>Bookr</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- request.base_url => checks where the server is running right now -->
+    <!-- url('<url name>') => SINATRA HELPER -->
+
+    <link rel="stylesheet" href="<%= url('css/style.css') %>" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <div class="container">
       <h1>My Awesome Book Sitez</h1>
       <%= yield %>
     </div>
+
+    <script src="<%= url('js/script.js') %>" charset="utf-8"></script>
   </body>
 </html>
