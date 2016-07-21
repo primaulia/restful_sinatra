@@ -1,7 +1,7 @@
 require "sinatra/activerecord"
 require "sinatra/activerecord/rake"
-require "faker"
 
 namespace :db do
+  require "faker"
   task :load_config
 end
