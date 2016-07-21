@@ -1,6 +1,9 @@
 development:
   adapter: postgresql
   database: bookr_development
-  # username: <%= ENV['PG_USER'] %>
-  # password: <%= ENV['PG_PASS'] %>
-  # host: localhost
+
+production:
+  adapter: postgresql
+  database: derrqhtae7j05f
+  username: sklflpmnkgmyta
+  password: jrldXRbTVdAjDLpk3Fjj3V78U1
