@@ -1,5 +1,5 @@
 require './models/book'
-require 'Faker'
+require 'faker'
 
 # seeds.rb is a way of automating the population of the database with testing data.
 
